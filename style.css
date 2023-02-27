@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/*Scroolbard CSS*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 6px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #1877f2;
+}
+
+.form_connexion_inscription {
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  width: 350px;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form_connexion_inscription .message_error {
+  color: red;
+  font-size: 14px;
+}
+
+.form_connexion_inscription label {
+  margin: 2px 0;
+}
+
+.form_connexion_inscription input {
+  padding: 5px;
+  outline: 0;
+  border-radius: 6px;
+  border: 1px solid #9999;
+}
+
+.form_connexion_inscription input[type="submit"] {
+  margin-top: 20px;
+  background-color: #1877f2;
+  border: 1px solid #1877f2;
+  color: #fff;
+}
+
+.form_connexion_inscription .link {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.link a {
+  color: #1877f2;
+  font-size: 14px;
+  text-decoration: 0;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
