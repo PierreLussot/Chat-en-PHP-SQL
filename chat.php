@@ -21,7 +21,7 @@
     <div class="chat">
       <div class="button_email">
         <span>moi@gmail.com</span>
-        <a href="" class="Deconnexiont_btn">Déconnexion</a>
+        <a href="deconnexion.php" class="Deconnexiont_btn">Déconnexion</a>
       </div>
       <!--  message -->
       <div class="message_box">
