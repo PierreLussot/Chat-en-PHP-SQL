@@ -23,9 +23,9 @@
         <label>Confirmation mot de passe</label>
         <input type="password" name="mdp2" class="mdp2" />
         <input type="submit" value="Inscription" />
-        <p class="link">Vous avez un compte ? <a href="index.html">Créer un compte</a></p>
+        <p class="link">Vous avez un compte ? <a href="index.php">Créer un compte</a></p>
     </form>
 </body>
 <script src="script.js"></script>
-
+ 
 </html>

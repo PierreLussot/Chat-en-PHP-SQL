@@ -100,6 +100,7 @@ body {
 
 .message_box {
   min-height: 360px;
+  max-height: 360px;
   min-width: 400px;
   margin: 10px 0;
   overflow: auto;
@@ -136,6 +137,7 @@ body {
 .others_message {
   border: 1px solid #999;
   border-radius: 10px 10px 0 10px;
+  margin-left: auto;
 }
 
 .others_message span {
