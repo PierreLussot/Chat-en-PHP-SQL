@@ -13,7 +13,7 @@ if (isset($_SESSION['user'])) {
                 <div class="message your_message">
                     <span>Vous</span>
                     <p><?= $data['msg'] ?></p>
-                    <p class="date"><?= $data['date'] ?></p>
+                    <p class="date"><?= $data['dates'] ?></p>
                 </div>
             <?php
 
@@ -23,7 +23,7 @@ if (isset($_SESSION['user'])) {
                 <div class="message others_message">
                     <span><?= $data['email'] ?></span>
                     <p><?= $data['msg'] ?></p>
-                    <p class="date"><?= $data['date'] ?></p>
+                    <p class="date"><?= $data['dates'] ?></p>
                 </div>
 <?php
             }
