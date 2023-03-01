@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,13 +33,20 @@
                 $check->execute([$email]);
                 $data = $check->fetch();
                 $row = $check->rowCount();
-                if ($row > 0) {
-                    $error = "Email deja pris";
+                if ($row == 0) {
+                    $req = $bdd->query("INSERT INTO utilisateurs(email,mdp) VALUES('$email','$mdp1')");
+                    if ($req) {
+                        $_SESSION['message'] = "<p class='message_inscription'>Votre compte a été créer avec succès !</p>";
+                        header('Location:index.php');
+                    } else {
+                        $error = "Inscription echouée";
+                    }
                 } else {
+                    $error = "Cet email existe deja !";
                 }
             }
         } else {
-            $error = "Veuillez remplir tous les champs";
+            $error = "Veuillez remplir tous les champs"; 
         }
     }
     ?>

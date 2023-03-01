@@ -25,7 +25,8 @@ session_start();
       $row = $check->rowCount();
       if ($row > 0) {
         $_SESSION['user'] = $email;
-        header('location: chat.php');
+        header('Location:chat.php');
+        unset($_SESSION['message']);
       } else {
         $error = "Email ou mot de passe incorrecte";
       }
@@ -36,6 +37,11 @@ session_start();
   ?>
   <form action="" method="POST" class="form_connexion_inscription">
     <h1>CONNEXION</h1>
+    <?php
+    if (isset($_SESSION['message'])) {
+      echo $_SESSION['message'];
+    }
+    ?>
     <p class="message_error"><?php
                               if (isset($error)) {
                                 echo $error;
