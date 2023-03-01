@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,6 +38,8 @@ session_start();
     <?php
     if (isset($_SESSION['message'])) {
       echo $_SESSION['message'];
+      
+
     }
     ?>
     <p class="message_error"><?php
